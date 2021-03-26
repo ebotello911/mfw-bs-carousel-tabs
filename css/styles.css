@@ -1,6 +1,6 @@
 /* GENERAL */
 :root {
-    --main_color: #1c7fd6;
+    --main_color: rgb(15, 45, 85);
 }
 
 .main_bg_color {
@@ -47,7 +47,8 @@
 }
 
 #contact #accordion .card,
-#contact #accordion .card .card-header {
+#contact #accordion .card .card-header,
+#contact form button {
     border-color: var(--main_color);
 }
 a.social_icon {
