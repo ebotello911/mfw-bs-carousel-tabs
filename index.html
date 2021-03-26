@@ -8,9 +8,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <title>Bootstrap MFW Template</title>
+        <script src="https://kit.fontawesome.com/b93cc77207.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body class="vh-100 w-100 m-0 p-0">
+    <body class="vh-100 w-100 m-0 p-0 main_bg_color">
+        <!-- CAROUSEL SECTION-->
         <div id="myCarousel" class="carousel slide h-75" data-ride="carousel">
             <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100">
@@ -33,7 +35,7 @@
                     </div>
                 </div>
                 <div class="carousel-item h-100">
-                    <img src="img/pexels-mateusz-sałaciak-4275885.jpg" alt="Slide three. Palm trees and fog. Adventure.Tomorrow." class="w-100 h-100">
+                    <img src="img/pexels-mateusz-sałaciak-4275885.jpg" alt="Little vilage with mountain and lake background. Adventure.Tomorrow." class="w-100 h-100">
                     <div class="carousel-caption d-flex pb-0 justify-content-end align-items-center h-100">
                         <h1 class="m-0 display-4">Adventure. Tomorrow.</h1>
                     </div>
@@ -48,11 +50,130 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
+        <!-- MAIN CONTAINER SECTION -->
         <div class="container bg-light">
+            <!-- DISCOVER -->
             <div class="row">
-                <p class="heading">Discover</p>
+                <p class="heading h3 main_bg_color">Discover</p>
+                <p class="p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat asperiores nemo cumque natus soluta dolores culpa, laudantium delectus excepturi repudiandae facilis aliquam ex tenetur modi voluptate non dolore molestiae, corporis numquam id vero! Impedit accusantium repellendus voluptatem ratione veniam porro distinctio amet, fugiat quidem eligendi, voluptatum at culpa excepturi aspernatur veritatis. Asperiores praesentium quam eligendi inventore explicabo nobis sapiente. Enim non ipsum aliquam, magni consequatur error animi? Aperiam corrupti maiores fugit amet quis error nemo corporis quae, nesciunt aut, rem enim voluptate molestiae deleniti dolores odit at iusto suscipit accusamus iure illum. Obcaecati velit sequi quasi pariatur hic accusamus suscipit.</p>
+            </div>
+            <!-- TRAVEL -->
+            <div class="row d-flex justify-content-end">
+                <p class="text-right heading main_bg_color h3">Travel</p>
+                <p class="p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat asperiores nemo cumque natus soluta dolores culpa, laudantium delectus excepturi repudiandae facilis aliquam ex tenetur modi voluptate non dolore molestiae, corporis numquam id vero! Impedit accusantium repellendus voluptatem ratione veniam porro distinctio amet, fugiat quidem eligendi, voluptatum at culpa excepturi aspernatur veritatis. Asperiores praesentium quam eligendi inventore explicabo nobis sapiente. Enim non ipsum aliquam, magni consequatur error animi? Aperiam corrupti maiores fugit amet quis error nemo corporis quae, nesciunt aut, rem enim voluptate molestiae deleniti dolores odit at iusto suscipit accusamus iure illum. Obcaecati velit sequi quasi pariatur hic accusamus suscipit.</p>
+            </div>
+            <!-- BREAK -->
+            <hr class="my-4">
+
+            <!-- CONTACT AND FAQ SECTION -->
+            <div id="contact">
+                <div class="d-flex justify-content-center text-center mb-5">
+                    <p class="heading main_bg_color h3">
+                    Contact & F.A.Q
+                </p>
+                </div>
+                <div class="row pb-5" id="contact">
+                    <!-- FORM -->
+                    <div class="col-md-5 offset-1">
+                        <form>
+                            <div class="form-group">
+                                <label for="nameInput" class="label_required_field">Name</label>
+                                <Input type="text" class="form-control" id="nameInput"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailInput" class="label_required_field">Email</label>
+                                <Input type="email" class="form-control" id="emailInput"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput" class="label_required_field">Message</label>
+                                <textarea class="form-control" id="messageInput" rows="3"></textarea>
+                            </div>
+                            <button class="btn border border-primary text-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                    <!-- FAQ -->
+                    <div class="col-md-5">
+                    <p class="text-muted font-weight-lighter">Frequently Asked Questions</p>
+                    <div id="accordion">
+                        <!-- Q1 - CARD -->
+                        <div class="card my-3">
+                            <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How many travel packages do you have?
+                                </button>
+                            </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Q2 - CARD -->
+                        <div class="card my-3">
+                            <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Limit per party?
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Q3 - CARD -->
+                        <div class="card my-3">
+                            <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Refunds for cancelations due to weather?
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <footer class="container border border-light text-light">
+            <p class="heading border-0 h3 my-3">Reach Us At</p>
+            <div class="row h-100 d-flex align-items-center justify-content-between">
+                <div class="col-md-4 px-4">
+                    <address class="m-0 p-0">
+                        <em class="d-flex flex-column h5">
+                            <span>1234 W. TravelParadise</span>
+                        <span>City, Ca 90000</span>
+                        <span><i class="mr-1 fas fa-mobile-alt"></i> (123) 900-9009</span>
+                        <span><i class="fas fa-envelope"></i> adventuretravel@email.com</span>
+                        </em>
+                    </address>
+                </div>
+                <div class="col-md-3 d-flex justify-content-around ">
+                    <a href="#" class=" text-decoration-none social_icon">
+                        <i class="far fa-thumbs-up fa-2x"></i>
+                    </a>
+                    <a href="#" class=" text-decoration-none social_icon"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#" class=" social_icon">
+                        <i class="fas fa-hashtag"></i><small>adventure.together</small>
+                    </a>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d409293.89889025973!2d-120.31914650430919!3d36.731960652543556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945c1fe8a2ab03%3A0x6fd4faa840e5cec3!2sFresno%20Yosemite%20International%20Airport!5e0!3m2!1sen!2sus!4v1616748423707!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </footer>
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,7 +1,11 @@
-body {
-    background-color: #1c7fd6;
+/* GENERAL */
+:root {
+    --main_color: #1c7fd6;
 }
 
+.main_bg_color {
+    background-color: var(--main_color);
+}
 .carousel_bg_image_styling {
     background-repeat: no-repeat;
     background-position: center center;
@@ -9,15 +13,11 @@ body {
 }
 
 #carousel_slide_two {
-    /* background-image: url('../img/video1.mp4'); */
-}
-
-#carousel_slide_two {
     background-image: url('../img/pexels-krivec-ales-552784.jpg');
 }
 
-.carousel-item > .carousel-caption > p > span[data-carousel-caption-two-span] {
-    background-color: rgba(255,255,255, 0.3);
+.carousel-item > .carousel-caption  [data-carousel-caption-two-span] {
+    background-color: rgba(255,255,255, 0.5);
 }
 
 .container.bg-light {
@@ -25,13 +25,34 @@ body {
 }
 .heading {
     color: #fff;
-    background-color: #1c7fd6;
     letter-spacing: 12px;
-    width: 45%;
+    width: 50%;
     border: 12px solid;
     padding:2px 8px;
-    font-size: 2rem;
     text-transform: uppercase;
     font-weight: lighter;
     margin: 0;
+}
+
+.label_required_field::before {
+    content: '*';
+    font-size: 24px;
+    color: red;
+}
+
+#contact  form {
+    border: 1px solid var(--main_color);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+#contact #accordion .card,
+#contact #accordion .card .card-header {
+    border-color: var(--main_color);
+}
+a.social_icon {
+    color: #fff;
+}
+a.social_icon:hover {
+    color: rgb(165, 199, 230);
 }
