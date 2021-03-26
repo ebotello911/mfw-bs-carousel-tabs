@@ -20,22 +20,20 @@ form.addEventListener('submit', evnt => {
     const { _name, email, message } = newMessageObject
     
     popupBox = document.querySelector('[data-form-confirmation-popup]');
-    getMessage = createPopUp(_name, email, message);
-    console.log('Get message: ', getMessage)
-    popupBox.innerHTML = getMessage;
+    popupBox.innerHTML = createPopUp(_name, email, message);
 })
 
 function createPopUp(name, email, message) {
     nameText = document.createElement('p').innerText= name;
     emailText = document.createElement('p').innertText=email;
    messageText = document.createElement('p').innerText=message;
-    responseMessage = 'Thank you for your submission. Your receipt number is #. Please allow 10 to 15 days for a response. The following is a transcript of your form submission.';
-    messageWrapper = `
-    ${responseMessage}\n
+    const info = 'Thank you for your submission. Your receipt number is #. Please allow 10 to 15 days for a response. The following is a transcript of your form submission.';
+    const response = `
+    ${info}\n
     ${nameText}\n
     ${email}\n
     ${message}
     `
-    return messageWrapper;
+    return response;
 }
 
