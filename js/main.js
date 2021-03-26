@@ -24,15 +24,15 @@ form.addEventListener('submit', evnt => {
 })
 
 function createPopUp(name, email, message) {
-    nameText = document.createElement('p').innerText= name;
-    emailText = document.createElement('p').innertText=email;
-   messageText = document.createElement('p').innerText=message;
+    const nameText = document.createElement('p').innerText= name;
+    const emailText = document.createElement('p').innertText=email;
+   const messageText = document.createElement('p').innerText=message;
     const info = 'Thank you for your submission. Your receipt number is #. Please allow 10 to 15 days for a response. The following is a transcript of your form submission.';
     const response = `
     ${info}\n
     ${nameText}\n
-    ${email}\n
-    ${message}
+    ${emailText}\n
+    ${messageText}
     `
     return response;
 }
