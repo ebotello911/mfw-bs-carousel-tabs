@@ -1,14 +1,37 @@
+body {
+    background-color: #1c7fd6;
+}
+
 .carousel_bg_image_styling {
-    height: 500px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-#carousel_slide_one {
-    background-image: url('../img/car.jpg');
+#carousel_slide_two {
+    /* background-image: url('../img/video1.mp4'); */
 }
 
 #carousel_slide_two {
-    background-image: url('../img/car.jpg');
+    background-image: url('../img/pexels-krivec-ales-552784.jpg');
+}
+
+.carousel-item > .carousel-caption > p > span[data-carousel-caption-two-span] {
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.container.bg-light {
+    color: #699691;
+}
+.heading {
+    color: #fff;
+    background-color: #1c7fd6;
+    letter-spacing: 12px;
+    width: 45%;
+    border: 12px solid;
+    padding:2px 8px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0;
 }
